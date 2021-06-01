@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');
+         
+}
+/*classe qui englobe toute la page après le body*/
+.global{
+    font-family:"Raleway", sans-serif;
+    width:1343px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+/*contient le logo et la navigation de Hébergement, activités et S'inscrire*/
+#reservia{
+    display: flex;
+    justify-content: space-between;
+    color: #0065FC;
+}
+/*logo reservia en haut à gauche*/
+#logo{
+    width: 93px;
+    object-fit:scale-down;
+}
+/*la navigation de Hébergement, activités et S'inscrire*/
+.liste-entete {
+    display: flex;
+    width: 380px;
+    margin-right: 40px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+li{
+    list-style:none;
+}
+/*le titre en haut à gauche Trouvez votre hébergement pour des vacances de rêve*/
+#trouve-hebergement{
+    font-size: 22px;
+    width: 600px;
+    font-weight:bolder;
+}
+/*element de la liste navigation activités*/
+.element:nth-child(2){
+    color: black;
+}
+/*recherche de ville icone, champ de saisie, et bouton de recherche*/
+#localisation{
+    display: flex;
+    align-items: center;  
+}
+/*icone de map*/
+.fa-map-marker-alt {
+    padding-top: 10px;
+    padding-left: 17px;
+    height: 30px;
+    width: 35px;
+    background-color:#F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+/*champ de saisie de la ville de recherche dans le header*/
+#input{
+    width: 240px;
+    height: 40px;
+    font-size: large;
+    font-family: Raleway;
+    border: 2px solid #F2F2F2;
+}
+/*bouton recherche la ville d'hébergement dans header*/
+#button{
+    height: 40px;
+    width: 140px;
+    font-size: large;
+    font-family: Raleway;
+    font-weight:bold;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: #0065FC;
+    border: none;
+}
+/*contient Filtrtes, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+#filtres{
+    display: flex;
+    justify-content: space-between;
+    width:900px;
+    align-items: baseline;
+}
+/*les icones de filtres */
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+    padding-top: 12px;
+    padding-left: 17px;
+    height: 30px;
+    width: 33px;
+    background-color:#DEEBFF;
+    border-radius:50px;
+    color: #0065FC;  
+}
+/*classe de icone et son label, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+.filtres{
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    border-left: none;
+    margin-left: 20px;;
+    width: auto;
+    padding-right:14px; 
+}
+/*classe que pour label des icones toutes les icones économique, familial, Romantique, Animaux autorisés*/
+.filtre{
+    margin-left:10px;
+}
+/*icone d'info de plus de 500 logements ...*/
+.fa-info{
+    background-color: white;
+    width: 15px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 3px;
+    color:#0065FC;
+   border-radius: 50%;
+   border: 2px solid #F2F2F2;
+   font-size: small;
+}
+/*paragraphe de plus de 500 logments sont disponibles dans cette ville */
+#fa-info{
+    margin-left: 8px ;
+}/***************************section de Hébergement à Marseille**************/
+/*section contient aside1 et aside 2 */
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right:auto; 
+}
+/*le titre Hébergement à Marseille*/
+h1{
+    margin-left: 4%; 
+}
+/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+.aside1{
+    background-color: #F2F2F2;
+    width: 870px;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+/*balise du symbole eruo*/
+.euro{
+    font-weight:bold;
+}
+/*aside0 contient  les 6 images de Hébergement à Marseille */
+.aside0{
+    display: flex; 
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+.image{
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+.images{
+    width: 240px;
+    height: 120px;
+    padding-bottom: 0px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ; 
+    
+}
+/*titre h3 de chaque image des 6 images hébergement à marseille et les 3 des plus populaires*/
+
+h3{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom:0px;
+    font-size: 16px;
+}
+
+/*correspond à la phrase"Nuit à partir de ..." dans l'aside Hébergement à Marseille et les plus populaires*/
+.prix{
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+/*texte affiche plus dans aside 1*/
+.affiche{
+    margin-top: 20px;
+    margin-left: 40px;  
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+/*etoiles 
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+   .fa-star {
+	color:gray;
+	cursor: pointer;
+	padding: 0.0625rem;
+}
+/* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+.fa-star.gold {
+	color:#0065FC;
+}
+
+/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+.rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+	/* Le groupe '.stars' positionne les étoiles
+		 les unes à côté des autres sans espacements. */
+	.stars {
+		display: inline-flex;
+		justify-content: center;
+		font-size: 10px;
+	}
+
+	/**
+	 * Et là opère la magie du ':hover' !
+	 */
+
+	/* A l'état :hover sur le parent '.rating',
+		 on force TOUTES les étoiles à passer en jaune. */
+	.stars:hover .fa-star {
+		color: #0065FC;
+	}
+	/* Et si la souris survole une étoile en particulier,
+		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+		 grâce à l'opérateur '~' et on les force en GRIS */
+	.stars .fa-star:hover ~ .fa-star {
+		color: gray;
+	}
+
+
+/***********************aside2*********************/
+
+/*corespond au titre les plus popualires et l'icone dans aside 2*/
+.title-populaire{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 4px;
+    align-items: baseline;
+    font-size: 12px;
+}
+
+/*aside2 les plus populaires contient tout le titre et les trois images */
+.aside2{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+/*contient l'image, le titre et le paragraphe*/
+.populaire{
+    display: flex;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 6px;
+}
+/*les trois images de l'aside de titre les plus populaires*/
+.image-populaire{
+    width: 150px;
+    height: 132px;
+    padding-left:0px;
+    object-fit:cover;
+    border-radius:20px 0 0 20px;
+}
+
+/*contient les 3 images avec leur contenu de aside 2 de titre les plus populaires*/
+#aside-populaire{
+
+    display: flex;
+    width: 370px;
+    height: 464px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    padding-bottom: 40px;
+    flex-direction: column; 
+    border-radius: 20px 20px 20px 20px;
+}
+/*titre et description de l'image dans l'aside les plus populaires*/
+.titre-prix{
+    padding-top: 12px;
+    padding-left: 18px;
+    width: 180px;
+}
+.titre-populaire{
+    line-height: 22px;
+}
+.prix-hôtel{
+    line-height: 1px;
+    padding-left: 10px;
+}
+
+.rating-postion{
+    margin-top: 40px;
+}
+
+/****************************2èm section Activités à Marseille*************************/
+/*contien le bloc des 6 images de la section Activités à Marseille */ 
+#activites-de-marseille{
+    display:flex;
+    justify-content: space-between;
+    
+}
+/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+.activite2{
+    width: 302px;
+    height: 142px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ;
+}
+/* image du 1er et 3em bloc de Activités à Marseille*/
+
+.activite{
+    width: 302px;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ;
+}
+/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+.image-activite1{
+    height: 444px;
+    border-radius: 20px 20px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 6px 6px #F2F2F2;    
+}
+/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+.image-activite2{
+    display:flex;
+    justify-content: space-between;
+    height: 444px;
+    border-radius: 20px 20px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    
+}
+/*image et le titre dessous bloc 2 et 4 de l'activités à Marseille*/
+.image2-titre2{
+    box-shadow: 5px 6px 6px #F2F2F2;
+    border-radius: 20px 20px 20px 20px ;
+}
+
+
+
+
+.titre-activite{
+    margin-left: 20px;
+    
+}
+
+#section2{
+    display: flex;
+    flex-direction: column;
+}
+/********************pied de la page **************************/
+footer{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1386px;
+    padding-left:40px;
+    display:flex;
+    justify-content:flex-start;
+    background-color: #F2F2F2;
+    margin-bottom: 50px;
+}
+/*titre des blocs dans le pied de la page*****/
+h5{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+/*titre et la liste du pied*/
+.pied-titre-liste{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+.liste-pied{
+    line-height: 24px;
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
