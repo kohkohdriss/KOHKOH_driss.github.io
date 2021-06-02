@@ -61,7 +61,7 @@
     </header>
     <!------------------Section1--------------------------------------->
     <!--Hébergement de Marseille  -->
-    <section >
+    <section id="section1" >
         <aside class="aside1">
             <h1>Hébergements à Marseille</h1>
             <div class="aside0">
@@ -153,8 +153,7 @@
             <p class="affiche"> Afficher plus</p>
         </aside>
         <!--aside 2 les plus popualires-->
-        <aside >
-            <div class="aside2">
+        <aside class="aside2" >
                 <div class="title-populaire">
                     <H2>Les plus populaires</H2>
                     <i class="fas fa-chart-line fa-2x"></i>
@@ -215,7 +214,6 @@
                         </div>  
                     </div>
                 </div>
-            </div>
         </aside>
     </section>
     <!---------------------section 2---------------------->
@@ -223,12 +221,12 @@
     <section id="section2">
             <h2>Activités à Marseille</h2>
             <div  id="activites-de-marseille" >
-                    <div class="image-activite1">
-                        <img class="activite" src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux Port">
+                    <div class="image-activite1 vieux-port">
+                        <img class="activite1" src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux Port">
                         <h4 class="titre-activite à Marseille">Vieux Port</h4>
 
                     </div> 
-                    <div class="image-activite2">
+                    <div class="image-activite2 fort-de-pomègues">
                             <div class="image2-titre2" >
                                 <img class="activite2" src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                                 <h4 class="titre-activite à Marseille">Fort de Pomègues</h4>
@@ -238,11 +236,11 @@
                                 <h4 class="titre-activite à Marseille">îles du Frioul</h4>
                             </div>
                     </div> 
-                    <div class="image-activite1">
-                        <img  class="activite" src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                    <div class="image-activite1 parc-national">
+                        <img  class="activite1" src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                             <h4 class="titre-activite à Marseille">Parc National des Calanques</h4>
                     </div> 
-               <div class="image-activite2">
+               <div class="image-activite2 notre-dame">
                    <div class="image2-titre2">
                       <img class="activite2" src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
                       <h4 class="titre-activite à Marseille">Notre-Dame-de-la-Garde</h4>
@@ -254,31 +252,34 @@
               </div>  
             </div>
     </section>
-</div>
-    <!--Le pied de la page -->
-    <footer>
-        <div class="pied-titre-liste">
-            <h5>A propos</h5>
+      <!--Le pied de la page -->
+      <footer>
+        <div id="footer">
+            <div class="pied-titre-liste">
+                <h5>A propos</h5>
+                    <ul class="liste-pied">
+                        <li>Fonctionnement du site</li>
+                        <li>Conditons générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+            </div>
+            <div class="pied-titre-liste">
+                <h5>Nos hébergements</h5>
                 <ul class="liste-pied">
-                    <li>Fonctionnement du site</li>
-                    <li>Conditons générales de vente</li>
-                    <li>Données et confidentialité</li>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
                 </ul>
-        </div>
-        <div class="pied-titre-liste">
-            <h5>Nos hébergements</h5>
-            <ul class="liste-pied">
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        </div>
-        <div class="pied-titre-liste">
-            <h5>Assistance</h5>
-            <ul class="liste-pied">
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
-        </div>
+            </div>
+            <div class="pied-titre-liste">
+                <h5>Assistance</h5>
+                <ul class="liste-pied">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </div>           
     </footer>
+</div>
+  
 </body>
 </html>
