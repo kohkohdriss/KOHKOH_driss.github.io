@@ -24,7 +24,7 @@
 /*la navigation de Hébergement, activités et S'inscrire*/
 .liste-entete {
     display: flex;
-    width: 380px;
+    width: 30%;
     margin-right: 40px;
     font-size: 15px;
     justify-content: space-between;
@@ -79,9 +79,15 @@ li{
 /*contient Filtrtes, toutes les icones économique, familial, Romantique, Animaux autorisés*/
 #filtres{
     display: flex;
-    justify-content: space-between;
-    width:900px;
     align-items: baseline;
+    max-width:940px;
+}
+/*co,tient les 4 icones de filtres*/
+#filtre-b2{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	width:100%;
 }
 /*les icones de filtres */
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
@@ -99,12 +105,13 @@ li{
     border-radius: 50px;
     border-left: none;
     margin-left: 20px;;
-    width: auto;
-    padding-right:14px; 
+    width:auto;
+    padding-right:14px;
+    margin-bottom:1%; 
 }
 /*classe que pour label des icones toutes les icones économique, familial, Romantique, Animaux autorisés*/
 .filtre{
-    margin-left:10px;
+    margin-left:5px;
 }
 /*icone d'info de plus de 500 logements ...*/
 .fa-info{
@@ -286,6 +293,7 @@ h3{
     background-color: white;
     padding: 6px;
     width:80%;
+   
 }
 /*les trois images de l'aside de titre les plus populaires*/
 .image-populaire{
@@ -315,6 +323,7 @@ h3{
     padding-top: 12px;
     padding-left: 18px;
     width:50%;
+    min-width:135px;
 }
 .titre-populaire{
     line-height: 22px;
@@ -401,10 +410,10 @@ h3{
 /********************pied de la page **************************/
 #footer{
     margin-top: 4%;
-    margin-left:-5%;
-    margin-right: -5%;
+    margin-left:-4%;
+    margin-right:-3%;
     max-width: 1386px;
-    padding-left:5%;
+    padding-left:4%;
     display:flex;
     justify-content:flex-start;
     background-color: #F2F2F2;
@@ -430,10 +439,12 @@ h5{
     width: auto;
 }
 
-@media (min-width:950px)and (max-width:1340px){
+
+@media (min-width:1153px)and (max-width:1340px){
 	.global{
 		width:auto;
 		max-width:1343px;
+		background-color:blue;
 	}
 	
 /*tout le bloc 1 et 3 de la section Activités à Marseille*/
@@ -458,8 +469,168 @@ h5{
 
 }
 
-@media (min-width:600px)and (max-width:1161px){
+@media (min-width:600px)and (max-width:1152px){
 
+.global{
+		width:auto;
+		max-width:1343px;
+	}
 
+/*la navigation de Hébergement, activités et S'inscrire*/
+.liste-entete {
+    width: 45%; 
+}
+filtre-b2{
+	display:flex;
+}
+	/*section contient aside1 et aside 2 */
+#section1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width:100%;
+    height:auto;
+    margin-left: auto;
+    margin-right:auto; 
+    flex-wrap:wrap-reverse;
+}
+/*classe de icone et son label, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+.filtres{
+  
+    margin-bottom:1%; 
+    margin-top:1%;
+}
+
+/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+.aside1{
+    background-color: #F2F2F2;
+    min-width:600px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/*aside2 les plus populaires contient tout le titre et les trois images */
+.aside2{
+    width:100%;
+    min-width:386px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2%;
+    padding-bottom:6%
     
+}
+
+/*contient les 3 images avec leur contenu de aside 2 de titre les plus populaires*/
+#aside-populaire{
+
+    width:90%;
+
+ 
+}
+/*contient l'image, le titre et le paragraphe*/
+.populaire{
+    display: flex;
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+    padding: 6px;
+    width:100%;
+    margin-bottom:1%
+
+   
+}
+/*les trois images de l'aside de titre les plus populaires*/
+.image-populaire{
+    width: 70%;
+    height: 160px;
+    padding-left:0px;
+    object-fit:cover;
+    border-radius:20px 0 0 20px;
+}
+/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+.image{
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    /*******/
+    width:43%
+}
+
+/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+.images{
+    width: 100%;
+    height: 160px;
+    padding-bottom: 0px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ;   
+}
+/*contien le bloc des 6 images de la section Activités à Marseille */ 
+#activites-de-marseille{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+.image-activite1{
+    height: 444px;
+    min-width:280px;
+    width:45%;
+    border-radius: 20px 20px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 6px 6px #F2F2F2; 
+    margin-right:1%; 
+    /*******/
+     margin-bottom:2%;
+     margin-top:2%;
+     max-width:50%;
+}
+
+/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+.image-activite2{
+    display:flex;
+    justify-content: space-between;
+    height: 444px;
+    min-widthwidth:400px;
+    max-width:45%;
+    border-radius: 20px 20px 20px 20px ;
+    flex-direction: row;
+    margin-left:0%;
+    flex-wrap:wrap;
+     margin-bottom:2%;
+     margin-top:2%;
+}
+.activite1{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ;
+}
+
+/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+.activite2{
+    width: 100%;
+    height: 142px;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0 ;
+}
+/*image et le titre dessous bloc 2 et 4 de l'activités à Marseille*/
+.image2-titre2{
+    box-shadow: 1px 6px 6px #F2F2F2;
+    border-radius: 20px 20px 20px 20px ;
+    min-width:100%;
+} 
+.liste1{
+	min-width:39%;
+}
+
 }
