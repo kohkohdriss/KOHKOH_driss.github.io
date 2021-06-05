@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');
-         
+    src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');      
 }
-
 a:link 
 { 
  text-decoration:none; 
@@ -564,11 +562,14 @@ filtre-b2{
 }
 /**************************************************MOBILE*********************************************/
 
-@media (min-width:300px)and (max-width:599px){
+@media (min-width:0px)and (max-width:599px){
 
 .global{
 		width:auto;
 		max-width:1343px;
+        min-width: 250px;
+        margin-left:auto;
+        margin-right:auto;
 		
 }
 /*le 1er élement dans la naviagation de la page  */
