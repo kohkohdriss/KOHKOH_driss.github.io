@@ -1111,4 +1111,10 @@ align-items:baseline;
     min-width:39%;
 
 }
+.titre-populaire{
+    font-size:3vw;
+}
+#coeur{
+	font-size:3vw;
+}
 }
