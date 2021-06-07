@@ -2,40 +2,78 @@
     font-family: 'Raleway';
     src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');      
 }
+/*annulation l'effet de href sur toute la page*/
 a:link 
 { 
  text-decoration:none; 
 }
-/*classe qui englobe toute la page après le body*/
+/*classe qui englobe toute la page aprÃ¨s le body*/
 .global{
     font-family:"Raleway", sans-serif;
     width:1343px;
+    padding-top:1%;
     margin-left: auto;
     margin-right: auto;   
 }
-/*contient le logo et la navigation de Hébergement, activités et S'inscrire*/
+/*contient le logo et la navigation de HÃ©bergement, activitÃ©s et S'inscrire*/
 #reservia{
     display: flex;
     justify-content: space-between;
     color: #0065FC;
 }
-/*logo reservia en haut à gauche*/
+/*logo reservia en haut Ã  gauche*/
 #logo{
     width: 93px;
+    padding-top:2%;
     object-fit:scale-down;
 }
-/*la navigation de Hébergement, activités et S'inscrire*/
+/*la navigation de HÃ©bergement, activitÃ©s et S'inscrire*/
 .liste-entete {
     display: flex;
     width: 30%;
     margin-right: 40px;
     font-size: 15px;
     justify-content: space-between;
+    position:
 }
+/*annulation les points de liste*/
 li{
     list-style:none;
-}  
-/*le titre en haut à gauche Trouvez votre hébergement pour des vacances de rêve*/
+}
+/*le 1 er Element dans la naviagation de la page  */
+.element:nth-child(1){
+	width:33%;
+	height:40px;;
+	padding-top:2%;
+	text-align:center;
+}
+/*le 2 em Element dans la naviagation de la page  */
+.element:nth-child(2){
+	width:33%;
+	height:40px;;
+	padding-top:2%;
+	text-align:center;
+}
+/*le 3em Element dans la naviagation de la page  */
+.element:nth-child(3){
+	width:33%;
+	height:40px;;
+	padding-top:2%;
+	text-align:center;
+}
+/*le survole bleu au dessus pour les élements de la navigation*/
+.element:nth-child(1):hover{
+	 border-top:3px #0065FC solid;
+}
+.element:nth-child(2):hover{
+	 border-top:3px #0065FC solid;
+}
+.element:nth-child(3):hover{
+	 border-top:3px #0065FC solid;
+}
+ 
+
+/*le titre en haut Ã  gauche Trouvez votre hÃ©bergement pour des vacances de rÃªve*/
 #trouve-hebergement{
     font-size: 22px;
     width: auto;
@@ -45,6 +83,10 @@ li{
 #localisation{
     display: flex;
     align-items: center;  
+}
+/*le mot recherche en blanc*/
+#bouton-recherche{
+	color:white;
 }
 /*icone de map*/
 .fa-map-marker-alt {
@@ -66,7 +108,7 @@ li{
     border: 2px solid #F2F2F2;
     outline: none;
 }
-/*bouton recherche la ville d'hébergement dans header*/
+/*bouton recherche la ville d'hÃ©bergement dans header*/
 #button{
     height: 40px;
     width: 135px;
@@ -83,7 +125,7 @@ li{
 .fa-search{
 	color: #0065FC;
 }
-/*contient Filtrtes, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*contient Filtrtes, toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 #filtres{
     display: flex;
     align-items: baseline;
@@ -106,7 +148,7 @@ li{
     border-radius:50px;
     color: #0065FC;  
 }
-/*classe de l'icone et son label, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*classe de l'icone et son label, toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 .filtres{
     border: 2px solid #F2F2F2;
     border-radius: 50px;
@@ -116,7 +158,7 @@ li{
     padding-right:14px;
     margin-bottom:1%; 
 }
-/*classe que pour label des icones toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*classe que pour label des icones toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 .filtre{
     margin-left:5px;
 }
@@ -140,7 +182,7 @@ li{
     margin-left: 8px ;
 }
 
-/***************************section de Hébergement à Marseille**************/
+/***************************section de HÃ©bergement Ã  Marseille**************/
 /*section contient aside1 et aside 2 */
 #section1{
     display: flex;
@@ -151,11 +193,11 @@ li{
     margin-left: auto;
     margin-right:auto; 
 }
-/*le titre Hébergement à Marseille*/
+/*le titre HÃ©bergement Ã  Marseille*/
 h1{
     margin-left: 4%; 
 }
-/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+/*aside1 contient le titre HÃ©bergement Ã  Marseille et les 6 images */
 #aside1{
     background-color: #F2F2F2;
     width:66%;
@@ -168,7 +210,7 @@ h1{
 .euro{
     font-weight:bold;
 }
-/*aside0 contient  les 6 images de Hébergement à Marseille */
+/*aside0 contient  les 6 images de HÃ©bergement Ã  Marseille */
 .aside0{
     display: flex; 
     height: auto;
@@ -176,7 +218,7 @@ h1{
     justify-content: space-evenly;
     align-content: space-around;
 }
-/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+/*contient image, titre, paragraphe et Ã©toiles, de l'hÃ©bergement Ã  Marseille*/
 .image{
     padding: 5px 5px 5px 5px;
     border-radius: 20px;
@@ -186,7 +228,7 @@ h1{
     padding-bottom: 10px;
     line-height: 20px;
 }
-/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+/*images correspond Ã  chaque image des 6 images de HÃ©bergement Ã  Marsielle*/
 .images{
     width: 240px;
     height: 120px;
@@ -194,16 +236,14 @@ h1{
     object-fit:cover;
     border-radius: 20px 20px 0 0 ; 
 }
-/*titre h3 de chaque image des 6 images hébergement à marseille et les 3 des plus populaires*/
-
+/*titre h3 de chaque image des 6 images hÃ©bergement Ã  marseille et les 3 des plus populaires*/
 h3{
     margin-top: 0px;
     margin-left: 10px;
     margin-bottom:0px;
     font-size: 16px;
 }
-
-/*correspond à la phrase"Nuit à partir de ..." dans l'aside Hébergement à Marseille et les plus populaires*/
+/*correspond Ã  la phrase"Nuit Ã  partir de ..." dans l'aside HÃ©bergement Ã  Marseille et les plus populaires*/
 .prix{
     margin-top: 0px;
     margin-left: 10px;
@@ -220,7 +260,7 @@ h3{
 }
 
 /*etoiles******************************** 
-/* Par défaut, une étoile est en gris,avec un padding et un curseur en forme de main. */
+/* Par dÃ©faut, une Ã©toile est en gris,avec un padding et un curseur en forme de main. */
 .fa-star {
 	color:gray;
 	cursor: pointer;
@@ -230,7 +270,7 @@ h3{
 .fa-star.gold {
     color:#0065FC;
 }
-/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+/* Le parent global '.rating' positionne le groupe des Ã©toiles et le lien en colonne */
 .rating {
 	display: flex;
 	flex-direction: column;
@@ -238,18 +278,18 @@ h3{
     padding-top: 0px;
     padding-left: 10px;
 }
-/* Le groupe '.stars' positionne les étoiles les unes à côté des autres sans espacements. */
+/* Le groupe '.stars' positionne les Ã©toiles les unes Ã  cÃ´tÃ© des autres sans espacements. */
 .stars {
 	display: inline-flex;
 	justify-content: center;
     font-size: 10px;
 }
-/* A l'état :hover sur le parent '.rating',on force TOUTES les étoiles à passer en jaune. */
+/* A l'Ã©tat :hover sur le parent '.rating',on force TOUTES les Ã©toiles Ã  passer en jaune. */
 .stars:hover .fa-star {
 	color: #0065FC;
 }
-/* Et si la souris survole une étoile en particulier,on sélectionne toutes les étoiles qui sont APRÈS celle-ci
-		 grâce à l'opérateur '~' et on les force en GRIS */
+/* Et si la souris survole une Ã©toile en particulier,on sÃ©lectionne toutes les Ã©toiles qui sont APRÃˆS celle-ci
+		 grÃ¢ce Ã  l'opÃ©rateur '~' et on les force en GRIS */
 .stars .fa-star:hover ~ .fa-star {
 	color: gray;
 }
@@ -303,7 +343,6 @@ h3{
 
 /*contient les 3 images avec leur contenu de aside 2 de titre les plus populaires*/
 #aside-populaire{
-
     display: flex;
     width:auto;
     height: 464px;
@@ -325,7 +364,7 @@ h3{
 .titre-populaire{
     line-height: 22px;
 }
-.prix-hôtel{
+.prix-hÃ´tel{
     line-height: 1px;
     padding-left: 10px;
     font-size: 12px;
@@ -335,21 +374,21 @@ h3{
     margin-top: 40px;
 }
 
-/****************************2èm section Activités à Marseille*************************/
+/****************************2Ã¨m section ActivitÃ©s Ã  Marseille*************************/
 
-/*contien le bloc des 6 images de la section Activités à Marseille */ 
+/*contien le bloc des 6 images de la section ActivitÃ©s Ã  Marseille */ 
 #activites-de-marseille{
     display:flex;
     justify-content: space-between;
 }
-/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+/*cible chaque image du 2em et 4 em bloc de ActivitÃ©s Ã  Marseille*/
 .activite2{
     width: 300px;
     height: 142px;
     object-fit:cover;
     border-radius: 20px 20px 0 0 ;
 }
-/* image du 1er et 3em bloc de Activités à Marseille*/
+/* image du 1er et 3em bloc de ActivitÃ©s Ã  Marseille*/
 
 .activite1{
     width: 300px;
@@ -357,7 +396,7 @@ h3{
     object-fit:cover;
     border-radius: 20px 20px 0 0 ;
 }
-/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+/*tout le bloc 1 et 3 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite1{
     height: 444px;
     max-width:300px;
@@ -374,7 +413,7 @@ h3{
 .parc-national{
 	margin-left:1%;
 }
-/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+/*tout le bloc 2 et 4 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite2{
     display:flex;
     justify-content: space-between;
@@ -384,12 +423,12 @@ h3{
     flex-direction: column;
     margin-left:1%;
 }
-/*image et le titre dessous bloc 2 et 4 de l'activités à Marseille*/
+/*image et le titre dessous bloc 2 et 4 de l'activitÃ©s Ã  Marseille*/
 .image2-titre2{
     box-shadow: 1px 6px 6px #F2F2F2;
     border-radius: 20px 20px 20px 20px ;
 }
-/*correspond à au titre h4 dans Activité de Marseille */
+/*correspond Ã  au titre h4 dans ActivitÃ© de Marseille */
 .titre-activite{
     margin-left: 20px;   
 }
@@ -430,18 +469,18 @@ h5{
 }
 
 
-/********************************média queries*************************************************************************************/
+/********************************mÃ©dia queries*************************************************************************************/
 
 @media (min-width:992px)and (max-width:1199px){
 .global{
 		width:auto;
 }	
-/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+/*tout le bloc 1 et 3 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite1{
     width:22%;
     margin-left:2%  
 }
-/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+/*tout le bloc 2 et 4 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite2{
     width:22%;
     margin-right:2%;
@@ -453,20 +492,17 @@ h5{
 	margin-left:0%;
 }
 
-/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+/*cible chaque image du 2em et 4 em bloc de ActivitÃ©s Ã  Marseille*/
 .activite2{
     width:100%;
 }
-/* image du 1er et 3em bloc de Activités à Marseille*/
+/* image du 1er et 3em bloc de ActivitÃ©s Ã  Marseille*/
 
 .activite1{
     width: 100%;
 }
 
-/**********************************************/
-
-
-/***************************section de Hébergement à Marseille**************/
+/***************************section de HÃ©bergement Ã  Marseille**************/
 /*section contient aside1 et aside 2 */
 #section1{
     display: flex;
@@ -475,11 +511,11 @@ h5{
     width:100%;
    
 }
-/*le titre Hébergement à Marseille*/
+/*le titre HÃ©bergement Ã  Marseille*/
 h1{
     margin-left: 3%; 
 }
-/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+/*aside1 contient le titre HÃ©bergement Ã  Marseille et les 6 images */
 #aside1{
 
     background-color: #F2F2F2;
@@ -490,7 +526,7 @@ h1{
     margin-left:1%
 }
 
-/*aside0 contient  les 6 images de Hébergement à Marseille */
+/*aside0 contient  les 6 images de HÃ©bergement Ã  Marseille */
 .aside0{
     display: flex; 
     height: auto;
@@ -499,7 +535,7 @@ h1{
     justify-content: space-evenly;
     align-content: space-around;
 }
-/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+/*contient image, titre, paragraphe et Ã©toiles, de l'hÃ©bergement Ã  Marseille*/
 .image{
     padding: 5px 5px 5px 5px;
     border-radius: 20px;
@@ -509,21 +545,17 @@ h1{
     padding-bottom:2%;
     width:45%;
 }
-/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+/*images correspond Ã  chaque image des 6 images de HÃ©bergement Ã  Marsielle*/
 .images{
     width: 100%;
     padding-bottom: 0px;
     object-fit:cover;
     border-radius: 20px 20px 0 0 ; 
 }
-
-
-
 /*texte affiche plus dans aside 1*/
 .affiche{
     margin-top:3%;
-    margin-left: 2%;  
-   
+    margin-left: 2%;    
 }
 
 /***********************aside2*********************/
@@ -579,7 +611,6 @@ h1{
 
 /*contient les 3 images avec leur contenu de aside 2 de titre les plus populaires*/
 #aside-populaire{
-
     display: flex;
     width:100%;
     height:auto;
@@ -602,7 +633,7 @@ h1{
 .titre-populaire{
     line-height: 22px;
 }
-.prix-hôtel{
+.prix-hÃ´tel{
     line-height: 1px;
     padding-left:5%;
     font-size: 12px;
@@ -612,26 +643,16 @@ h1{
     margin-top: auto;
 }
 
-
-
-
-
-/*****************/
-
-
-
-
 }
 
-/*********Tablette***********************média queries**************************************/
+/*********Tablette***********************mÃ©dia queries**************************************/
 
 @media (min-width:768px)and (max-width:991px){
 
 .global{
 	width:auto;
 }
-
-/*la navigation de Hébergement, activités et S'inscrire*/
+/*la navigation de HÃ©bergement, activitÃ©s et S'inscrire*/
 .liste-entete {
     width: 45%; 
     margin-right:0%;
@@ -639,26 +660,25 @@ h1{
 filtre-b2{
 	display:flex;
 }
-	/*section contient aside1 et aside 2 */
+/*section contient aside1 et aside 2 */
 #section1{
     flex-wrap:wrap-reverse;    
 }
-/*classe de icone et son label, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*classe de icone et son label, toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 .filtres{
-  
     margin-bottom:1%; 
     margin-top:1%;
 }
-
-
 /*liste dans le pied de la page */
 .liste1{
 	min-width:39%;
 }
+/*l'entete de la page */
 #head{
 	padding-left:5%;
 	padding-right:5%;
 }
+
 /*aside2 les plus populaires contient tout le titre et les trois images */
 .aside2{
     width:100%;
@@ -684,15 +704,17 @@ filtre-b2{
     height:30vw;
 }
 
-/*le titre Hébergement à Marseille*/
+/*le titre HÃ©bergement Ã  Marseille*/
 h1{
     margin-left: 5%; 
 }
+
 /*les trois images de l'aside de titre les plus populaires*/
 .image-populaire{
     width: 80%;
     height:30vw;
 }
+
 /*corespond au titre les plus popualires et l'icone dans aside 2*/
 .title-populaire{
 	display:flex;
@@ -703,6 +725,7 @@ h1{
 	margin-right:0%;
 	align-items:baseline;
 }
+
 /*titre et description de l'image dans l'aside les plus populaires*/
 .titre-prix{
     padding-top:8%;
@@ -710,16 +733,19 @@ h1{
    flex-direction:column;
    position:relative;
 }
+
 .rating-postion{
   position: absolute;
   bottom:5%;
 }
+
 /*texte affiche plus dans aside 1*/
 .affiche{
     margin-top: 0px;
     margin-left:5%;
 }
-/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+
+/*aside1 contient le titre HÃ©bergement Ã  Marseille et les 6 images */
 #aside1{
 	display:flex;
 	flex-direction:column;
@@ -729,7 +755,7 @@ h1{
     background-color:white;
 }
 
-/*aside0 contient  les 6 images de Hébergement à Marseille */
+/*aside0 contient  les 6 images de HÃ©bergement Ã  Marseille */
 .aside0{
     display: flex;
     flex-direction:column;
@@ -737,38 +763,37 @@ h1{
     height:100%;
 }
 
-
-/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+/*contient image, titre, paragraphe et Ã©toiles, de l'hÃ©bergement Ã  Marseille*/
 .image{
     width:90%;
     margin-left:0px;
     margin-right:0px;
     height:38vw;
-  
 }
 
-/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+/*images correspond Ã  chaque image des 6 images de HÃ©bergement Ã  Marsielle*/
 .images{
     width: 100%;
     margin-left:0px;
     margin-right:0px;
     height:30vw;
 }
-/****************************2èm section Activités à Marseille*************************/
+/****************************2Ã¨m section ActivitÃ©s Ã  Marseille*************************/
 
 #h2-activite{
 	margin-left:5%;
 }
-/*contien le bloc des 6 images de la section Activités à Marseille */ 
+
+/*contien le bloc des 6 images de la section ActivitÃ©s Ã  Marseille */ 
 #activites-de-marseille{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     flex-wrap:wrap;
-    width:auto;
-    
+    width:auto; 
 }
-/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+
+/*cible chaque image du 2em et 4 em bloc de ActivitÃ©s Ã  Marseille*/
 .activite2{
     width:100%;
     min-width:auto;
@@ -776,15 +801,16 @@ h1{
     object-fit:cover;
     border-radius: 20px 20px 0 0 ;
 }
-/* image du 1er et 3em bloc de Activités à Marseille*/
 
+/* image du 1er et 3em bloc de ActivitÃ©s Ã  Marseille*/
 .activite1{
     width:100%;
     height: 380px;
     object-fit:cover;
     border-radius: 20px 20px 0 0 ;
 }
-/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+
+/*tout le bloc 1 et 3 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite1{
     height: 444px;
     max-width:42%;
@@ -794,16 +820,16 @@ h1{
     margin-left:5%;
 }
 
-.fort-de-pomègues{
+.fort-de-pomÃ¨gues{
 	margin-bottom:3%;
 	width:100%;
 }
 .parc-national{
 	margin-left:5%;
-	with:100%;
+	width:100%;
 }
 
-/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+/*tout le bloc 2 et 4 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite2{
     display:flex;
     justify-content: space-between;
@@ -814,26 +840,28 @@ h1{
     flex-direction: column;
     margin-right:5%;
 }
-/*image et le titre dessous bloc 2 et 4 de l'activités à Marseille*/
+
+/*image et le titre dessous bloc 2 et 4 de l'activitÃ©s Ã  Marseille*/
 .image2-titre2{
 	width:100%;
     box-shadow: 1px 6px 6px #F2F2F2;
     border-radius: 20px 20px 20px 20px ;
 }
-/*correspond à au titre h4 dans Activité de Marseille */
+
+/*correspond Ã  au titre h4 dans ActivitÃ© de Marseille */
 .titre-activite{
     margin-left:5%;   
 }
+
 #section2{
     display: flex;
     flex-direction: column;
     width:auto;
 }
+
 #footer{
     padding-left:5%;
 }
-
-
 }
 /**************************************************MOBILE***********************************************************************/
 
@@ -842,22 +870,22 @@ h1{
 .global{
 		width:auto;
         margin-left:auto;
-        margin-right:auto;
-        
-		
+        margin-right:auto;		
 }
+
 #head{
 	padding-left:5%;
 	padding-right:5%;
 }
 
-/*la navigation de Hébergement, activités et S'inscrire*/
+/*la navigation de HÃ©bergement, activitÃ©s et S'inscrire*/
 .liste-entete {
     width: 45%; 
     display:flex;
     flex-direction:row;
 }
-/*le 1 er élement dans la naviagation de la page  */
+
+/*le 1 er Ã©lement dans la naviagation de la page  */
 .element:nth-child(1){
   position:absolute;
   width:56%;
@@ -865,43 +893,46 @@ h1{
   margin-right:0%;
   height:30px;
   text-align:center;
-  border-bottom:4px #F2F2F2 solid;
-  
+  border-bottom:4px #F2F2F2 solid; 
 }
 .element:nth-child(1):hover{
 	 border-bottom:3px #0065FC solid;
+	 border-top:none;
 }
 
-
-/*le 2em élement dans la naviagation de la page  */
+/*le 2em Ã©lement dans la naviagation de la page  */
 .element:nth-child(2){
   position:absolute;
-  right:5%;
-  width:56%;
-  height:30px;
+  right:5%;  
+  width:56%;  
+  height:30px;  
   margin-left:0%;
   margin-right:-12%;
- 
   text-align:center;
   border-bottom:4px #F2F2F2 solid;
 }
+
 .element:nth-child(2):hover{
 	 border-bottom:3px #0065FC solid;
+	 border-top:none;
 }
 
+.element:nth-child(3):hover{
+	 border-top:none;
+}
 
-/*le 3em élement dans la naviagation de la page  */
+/*le 3em Ã©lement dans la naviagation de la page  */
 .element:nth-child(3){
     position:absolute;
-    right:6%;
-    bottom:42px;
-  }
-  /*le premier titre de la page*/
- #trouve-hebergement{
+    right:0%;
+    bottom:10px;
+}
+/*le premier titre de la page*/
+#trouve-hebergement{
   margin-top:35px;
 }
   
-/*contient le logo et la navigation de Hébergement, activités et S'inscrire*/
+/*contient le logo et la navigation de HÃ©bergement, activitÃ©s et S'inscrire*/
 #reservia{
     display: flex;
     flex-direction:column;
@@ -915,25 +946,22 @@ h1{
 #bouton-recherche{
     display: none;
 }
-/*le bouton qui est concerné*/
+/*le bouton qui est concernÃ©*/
 #button{
 	width:46px;	
 	min-width:40px;
 	border-radius: 10px 10px 10px 10px;
 	margin-left:-5px;  
 }
-
-/*icone de bouton de recherche dans la ville d'hébergement dans header*/
+/*icone de bouton de recherche dans la ville d'hÃ©bergement dans header*/
 .fa-search{
 	color:white;
 }
 
-/*contient Filtrtes, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*contient Filtrtes, toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 #filtres{
     flex-direction:column;
 }
-
-
 filtre-b2{
 	display:flex;
 }
@@ -941,11 +969,12 @@ filtre-b2{
 #section1{
     flex-wrap:wrap-reverse;    
 }
-/*classe de icone et son label, toutes les icones économique, familial, Romantique, Animaux autorisés*/
+/*classe de icone et son label, toutes les icones Ã©conomique, familial, Romantique, Animaux autorisÃ©s*/
 .filtres{
     margin-bottom:1%; 
     margin-top:1%;
 }
+
 /*aside2 les plus populaires contient tout le titre et les trois images */
 .aside2{
     width:100%;
@@ -972,7 +1001,7 @@ filtre-b2{
     height:30vw;
 }
 
-/*le titre Hébergement à Marseille*/
+/*le titre HÃ©bergement Ã  Marseille*/
 h1{
     margin-left: 5%; 
 }
@@ -982,7 +1011,7 @@ h1{
     height:30vw;
     
 }
-/*aside1 contient le titre Hébergement à Marseille et les 6 images */
+/*aside1 contient le titre HÃ©bergement Ã  Marseille et les 6 images */
 #aside1{
 	display:flex;
 	flex-direction:column;
@@ -992,7 +1021,7 @@ h1{
     background-color:white;
 }
 
-/*aside0 contient  les 6 images de Hébergement à Marseille */
+/*aside0 contient  les 6 images de HÃ©bergement Ã  Marseille */
 .aside0{
     display: flex;
     flex-direction:column;
@@ -1001,25 +1030,23 @@ h1{
 }
 /*corespond au titre les plus popualires et l'icone dans aside 2*/
 .title-populaire{
-
-display:flex;
-justify-content:space-between;
-padding-left:4%;
-padding-right:4%;
-margin-left:0%;
-margin-right:0%;
-align-items:baseline;
+    display:flex;
+    justify-content:space-between;
+    padding-left:4%;
+    padding-right:4%;
+    margin-left:0%;
+    margin-right:0%;
+    align-items:baseline;
 }
 
-/*contient image, titre, paragraphe et étoiles, de l'hébergement à Marseille*/
+/*contient image, titre, paragraphe et Ã©toiles, de l'hÃ©bergement Ã  Marseille*/
 .image{
-    width:90%;
+    width:95%;
     margin-left:0px;
-    margin-right:0px;
-  
+    margin-right:0px; 
 }
 
-/*images correspond à chaque image des 6 images de Hébergement à Marsielle*/
+/*images correspond Ã  chaque image des 6 images de HÃ©bergement Ã  Marsielle*/
 .images{
     width: 100%;
     margin-left:0px;
@@ -1042,13 +1069,13 @@ align-items:baseline;
   bottom:5%;
 }
 
-
-/*contient le bloc des 6 images de la section Activités à Marseille */ 
+/*contient le bloc des 6 images de la section ActivitÃ©s Ã  Marseille */ 
 #activites-de-marseille{
     display:flex;
     flex-direction:column;
     width:auto;
 }
+
 /*texte affiche plus dans aside 1*/
 .affiche{
     margin-top: 0px;
@@ -1058,21 +1085,20 @@ align-items:baseline;
 	padding-left:5%;
 }
 
-/*tout le bloc 1 et 3 de la section Activités à Marseille*/
+/*tout le bloc 1 et 3 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite1{
-     width:100%;
-     min-width:95%;
-     margin-bottom:2%;
-     margin-top:0px;
-     margin-left:auto;
-     margin-right:auto;
-     height:auto;
-     padding-bottom:0px;
-     margin-bottom:20px;
-     
+    width:100%;
+    min-width:95%;
+    margin-bottom:2%;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    padding-bottom:0px;
+    margin-bottom:20px;  
 }
 
-/*tout le bloc 2 et 4 de la section Activités à Marseille*/
+/*tout le bloc 2 et 4 de la section ActivitÃ©s Ã  Marseille*/
 .image-activite2{
     width:100%;
     min-width:95%;
@@ -1089,13 +1115,13 @@ align-items:baseline;
     min-width:100%;
      height:30vw;  
 }
-/*cible chaque image du 2em et 4 em bloc de Activités à Marseille*/
+/*cible chaque image du 2em et 4 em bloc de ActivitÃ©s Ã  Marseille*/
 .activite2{
     width:100%;
     min-width:100%;
      height:30vw;  
 }
-/*image et le titre dessous bloc 2 et 4 de l'activités à Marseille*/
+/*image et le titre dessous bloc 2 et 4 de l'activitÃ©s Ã  Marseille*/
 .image2-titre2{
 	width:100%;
     margin-bottom:20px;
