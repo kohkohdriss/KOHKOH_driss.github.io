@@ -364,7 +364,7 @@ h3{
 .titre-populaire{
     line-height: 22px;
 }
-.prix-hÃ´tel{
+.prix-hotel{
     line-height: 1px;
     padding-left: 10px;
     font-size: 12px;
@@ -392,7 +392,7 @@ h3{
 
 .activite1{
     width: 300px;
-    height: 400px;
+    height: 380px;
     object-fit:cover;
     border-radius: 20px 20px 0 0 ;
 }
@@ -633,7 +633,7 @@ h1{
 .titre-populaire{
     line-height: 22px;
 }
-.prix-hÃ´tel{
+.prix-hotel{
     line-height: 1px;
     padding-left:5%;
     font-size: 12px;
