@@ -26,7 +26,7 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms, une petit
 Un nouveau design basé sur les principes du Material Design vient d’être réalisé par Loïc, designer UI.
 #### Objectifs et Compétences évaluées
 
-*** le but est de faire l'intégration d'une maquette en HTML5 et CSS3 ***
+*** le but est de faire l'intégration d'une maquette en HTML5 et CSS3 et résponsive ***
 
 
 
