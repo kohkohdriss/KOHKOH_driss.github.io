@@ -5,7 +5,7 @@ _`Début de formation le Avril/2021`_
 
 ## Auteur
 
-👤 &nbsp; **Driss KOHKOH** [🇫🇷 Contactez moi 🇬🇧](<kohkoh.driss@gmail.com>)
+👤 &nbsp; **Driss KOHKOH** [🇫🇷 Contactez moi 🇬🇧](mailto:kohkoh.driss@gmail.com)
 
 * Github: [@Driss Kohkoh](https://github.com/kohkohdriss)
 * LinkedIn: [@kohkoh driss](https://www.linkedin.com/in/driss-kohkoh/)
